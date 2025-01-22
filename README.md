@@ -13,7 +13,7 @@ This project was trained at home as a hobby.
 
 ```bash
 git clone https://github.com/motexture/caT-text-to-video-2.3b/
-cd caT-text-to-video
+cd caT-text-to-video-2.3b
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
