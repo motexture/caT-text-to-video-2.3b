@@ -12,7 +12,7 @@ This project was trained at home as a hobby.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/motexture/caT-text-to-video.git
+git clone https://github.com/motexture/caT-text-to-video-2.3b/
 cd caT-text-to-video
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
