@@ -8,6 +8,11 @@ from pipeline.caT import caTPipeline
 from huggingface_hub import snapshot_download
 from diffusers import DPMSolverMultistepScheduler
 
+repo_id = "motexture/caT-text-to-video-2.3b"
+local_dir = "./model"
+
+snapshot_download(repo_id, local_dir=local_dir)
+
 NUM_FRAMES = 8
 
 def count_parameters(model):
@@ -25,8 +30,8 @@ def set_seed(seed):
 
 class VideoGenerator:
     def __init__(self):
-        self.device = "cuda:1"
-        self.pipeline = self.initialize_pipeline("/home/motexture/caT-Training/caT3/train_2025-01-19T22-56-09/validated-65000")
+        self.device = "cuda"
+        self.pipeline = self.initialize_pipeline(local_dir)
         self.stacked_latents = None
         self.previous_latents = None
         self.generated = False
