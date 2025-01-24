@@ -18,7 +18,7 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-python3 run.py
+python run.py
 ```
 
 Visit the provided URL in your browser to interact with the interface and start generating videos.
